@@ -1,18 +1,11 @@
 <?php
-
-add_action( 'wp_enqueue_scripts', 'starter_enqueue_styles' );
-
-function starter_enqueue_styles() {
-	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-}
-
 function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	/**
 	 * General Configs
 	 */
 	$boldgrid_framework_configs['boldgrid-parent-theme'] = true;
 
-	$boldgrid_framework_configs['theme_name'] = 'boldgrid-diced'; // Text domain
+	$boldgrid_framework_configs['theme_name'] = 'boldgrid-diced';
 	$boldgrid_framework_configs['scripts']['boldgrid-sticky-footer'] = true;
 	$boldgrid_framework_configs['temp']['attribution_links'] = true;
 	$boldgrid_framework_configs['customizer-options']['typography']['enabled'] = true;
@@ -22,7 +15,6 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['customizer-options']['background']['defaults']['background_image'] = false;
 
 	$boldgrid_framework_configs['template']['call-to-action'] = 'all-pages';
-
 
 	/**
 	 * Customizer Configs
@@ -52,7 +44,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 			'format' => 'palette-primary',
 			'neutral-color' => '#ffffff',
 			'colors' => array(
-				'#169dc5',               
+				'#169dc5',
 				'#000000',
 				'#facc2d',
 			)
@@ -92,7 +84,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 		case 32: //<-- General
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][3]['default'] = true;
 			break;
-		
+
 		// Default Behavior
 		default:
 			$boldgrid_framework_configs['customizer-options']['colors']['defaults'][0]['default'] = true;
