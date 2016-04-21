@@ -13,8 +13,13 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['template']['navbar-search-form'] = false;
 	$boldgrid_framework_configs['template']['header'] = '2';
 	$boldgrid_framework_configs['customizer-options']['background']['defaults']['background_image'] = false;
-
 	$boldgrid_framework_configs['template']['call-to-action'] = 'all-pages';
+
+	// Remove Container ID that is targetted by navbar-toggle.
+	$boldgrid_framework_configs['menu']['prototype']['primary']['container_id'] = 'primary-menu';
+
+	// Remove the container classes that are targetted with navbar-collapse.
+	$boldgrid_framework_configs['menu']['prototype']['primary']['container_class'] = 'primary-menu';
 
 	/**
 	 * Customizer Configs
@@ -136,18 +141,17 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	/**
 	 * Widgets
 	 */
-	$widget_markup['call-to-action'] = <<<HTML
+	$widget_markup['call-to-action'] = '
 		<div class="row call-to-action-wrapper">
 			<div class="col-md-12">
 				<div class="call-to-action">
-					<h2 class="slogan">WE'VE GOT A LOT OF FRESH IDEAS TO SHARE</h2>
+					<h2 class="slogan">WE\'VE GOT A LOkkT OF FRESH IDEAS TO SHARE</h2>
 					<p class="p-button-primary">
 						<a class="button-primary" href="about-us">LEARN MORE</a>
 					</p>
 				</div>
 			</div>
-		</div>
-HTML;
+		</div>';
 
 	// Widget 1
 	$boldgrid_framework_configs['widget']['widget_instances']['boldgrid-widget-1'][] = array (
