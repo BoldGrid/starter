@@ -9,7 +9,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	$boldgrid_framework_configs['scripts']['boldgrid-sticky-footer'] = true;
 	$boldgrid_framework_configs['temp']['attribution_links'] = true;
 	$boldgrid_framework_configs['customizer-options']['typography']['enabled'] = true;
-	$boldgrid_framework_configs['template']['footer'] = '4';
+	$boldgrid_framework_configs['template']['footer'] = '3';
 	$boldgrid_framework_configs['template']['navbar-search-form'] = false;
 	$boldgrid_framework_configs['template']['header'] = '2';
 	$boldgrid_framework_configs['customizer-options']['background']['defaults']['background_image'] = false;
