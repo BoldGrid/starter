@@ -3,7 +3,7 @@ language: php
 php:
   - 7.0
 
-before_script: "${TRAVIS_TAG:+bash release}"
+script: "${TRAVIS_TAG:+bash release}"
 
 deploy:
   provider: releases
