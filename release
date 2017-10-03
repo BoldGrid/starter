@@ -1,0 +1,3 @@
+
+#!/bin/bash
+sed -i "/^Version/c\Version: $TRAVIS_TAG" style.css && sed -i "/^Template/c\Template: boldgrid-starter" style.css && zip -r boldgrid-starter.zip . -x .\* -x codesniffer.ruleset.xml -x gulpfile.js -x package.json -x bower.json -x release
