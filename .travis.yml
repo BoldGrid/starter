@@ -6,6 +6,7 @@ php:
 script: "${TRAVIS_TAG:+bash release}"
 
 deploy:
+  skip_cleanup: true
   provider: releases
   api_key:
     secure: U5uFJHA0Fzs+7dhArJB4vqEOklszZ7FnodjCBGkHx2SeQRoP/8/KHNiniLYmMx4o1xYhSFVZplH/48wcQ2MnLspZS8IIhKuyghAB6yqVlHtwbJdDF+3Eef3o3dNwszEp+MJkFWn663rNRpelnqiywCv/lF/ZpNe2MxfhP3RQNAKEXgnYbQz5kLD/Tp0oMl5cAjkNwlM9Ot/jxWqEFNVconco3fMD2aYtUGJi2vynXGLZFcFPUA4EvjvYHVUHQ4U6BaekZ5eQFtoY+h71FNTpJkckH5zZQ18uO2sD6hj3hnWz0FD75mIfr4k/ajqlAperJzn4GnV6b+A+lOpZTsbndAnrGWKEbXReYnv39ZXsMtJrO3+I0vnZUSJGK5DqRg14PA8ltJE+pl5df1JUDIcCeeq2SsLqyUKjfXFpohoP9wRi1ByHohPNO5WBDE2ew/tIoSPlwbsND6J0KJqgHomM7CpnffvpK9ixwqrK0OvgsBzWylgSrwv6mzSS0eZmtyz6T1C9hHPPU9anQne0h2V7m5qDbTQV2rk9RbgMsswiUMCZ7vobZFGXB0XkbQUWhNf6gaGAw3HTmHEbqBVC3wQyHBuf0xpWjQPqPa9Xbqjx2mwI2TQh2FJjTMbO0TslS2Fedx4lPdGMH+zLytO4Y1rczuhGOrKXxaOrT3OoLx7USkM=
@@ -14,4 +15,3 @@ deploy:
     repo: BoldGrid/starter
     branch: master
     tags: true
-    skip_cleanup: true
