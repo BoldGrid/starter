@@ -1,5 +1,10 @@
 sudo: false
-script: "${TRAVIS_TAG:+bash release}"
+language: php
+php:
+  - 7.0
+
+before_script: "${TRAVIS_TAG:+bash release}"
+
 deploy:
   provider: releases
   api_key:
@@ -7,5 +12,6 @@ deploy:
   file: boldgrid-starter.zip
   on:
     repo: BoldGrid/starter
+    branch: master
     tags: true
     skip_cleanup: true
