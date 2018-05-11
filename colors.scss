@@ -1,0 +1,10 @@
+/*------------------------------------------------------------------------
+ # Color Palette SCSS
+ *
+ * Add custom color code for SCSS compile here.  Variables are
+ * available based on color palettes.
+ *------------------------------------------------------------------------*/
+.crio-child-color-1-example {
+	background: $palette-primary_1;
+	color: $text-contrast-palette-primary_1;
+}
