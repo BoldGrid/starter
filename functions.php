@@ -5,6 +5,8 @@
  * Adds functionality to theme.
  *
  * @since 1.0.0
+ *
+ * @package CrioChild
  */
 
 /**
@@ -46,6 +48,5 @@ function crio_child_config( $config ) {
 
 	return $config;
 }
-
 
 add_filter( 'boldgrid_theme_framework_config', 'crio_child_config', 11 );
