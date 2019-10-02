@@ -21,9 +21,12 @@
  * @return array $config BGTFW configuration options.
  */
 function crio_child_config( $config ) {
-
-	// Override default provided palettes.
+	//Set up child theme configs
+  $config['boldgrid-parent-theme'] = true;
+  $config['parent-theme-name'] = 'crio';
+  $config['theme_name'] = 'crio-child';
 	$config['customizer-options']['colors']['settings']['scss_directory']['default'] = get_stylesheet_directory() . '/css';
+
 	$config['customizer-options']['colors']['defaults'] = array(
 		array(
 			'default' => true,
