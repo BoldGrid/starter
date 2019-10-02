@@ -26,31 +26,19 @@ function crio_child_config( $config ) {
   $config['theme_name'] = 'crio-child';
 	$config['customizer-options']['colors']['settings']['scss_directory']['default'] = get_stylesheet_directory() . '/css';
 
-	$config['customizer-options']['colors']['defaults'] = array(
-		array(
-			'default' => true,
-			'format' => 'palette-primary',
-			'neutral-color' => '#000000',
-			'colors' => array(
-				'#000000',
-				'#000000',
-				'#000000',
-				'#000000',
-				'#000000',
-			),
-		),
-		array(
-			'format' => 'palette-primary',
-			'neutral-color' => '#ffffff',
-			'colors' => array(
-				'#ffffff',
-				'#ffffff',
-				'#ffffff',
-				'#ffffff',
-				'#ffffff',
-			),
-		),
-	);
+	//Demonstration of adding a new saved color palette
+	$config['customizer-options']['colors']['defaults'][] = array(
+  			'default' => true,
+  			'format' => 'palette-primary',
+  			'neutral-color' => '#000000',
+  			'colors' => array(
+  				'#000000',
+  				'#000000',
+  				'#000000',
+  				'#000000',
+  				'#000000',
+  			),
+  		);
 
 	return $config;
 }
