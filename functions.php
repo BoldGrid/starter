@@ -11,7 +11,6 @@
 
  //Run parent theme configs first
  require_once get_parent_theme_file_path( 'inc/boldgrid-theme-framework-config/config.php' );
- require_once get_parent_theme_file_path( 'inc/boldgrid-theme-framework/boldgrid-theme-framework.php' );
 
 /**
  * Filters BGTFW Configurations.
