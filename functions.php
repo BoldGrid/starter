@@ -9,6 +9,10 @@
  * @package CrioChild
  */
 
+ //Run parent theme configs first
+ require_once get_parent_theme_file_path( 'inc/boldgrid-theme-framework-config/config.php' );
+ require_once get_parent_theme_file_path( 'inc/boldgrid-theme-framework/boldgrid-theme-framework.php' );
+
 /**
  * Filters BGTFW Configurations.
  *
@@ -19,7 +23,7 @@
 function crio_child_config( $config ) {
 
 	// Override default provided palettes.
-	$config['customizer-options']['colors']['settings']['scss_directory']['default'] = get_stylesheet_directory();
+	$config['customizer-options']['colors']['settings']['scss_directory']['default'] = get_stylesheet_directory() . '/css';
 	$config['customizer-options']['colors']['defaults'] = array(
 		array(
 			'default' => true,
