@@ -13,8 +13,8 @@
  require_once get_parent_theme_file_path( 'inc/boldgrid-theme-framework-config/config.php' );
 
 /**
- * Filters BGTFW Configurations.
- *
+ * Use this function to modify any of the BoldGrid Theme Framework configurations.
+ * Reference: https://www.boldgrid.com/docs/configuration-file
  * @param  array $config BGTFW configuration options.
  *
  * @return array $config BGTFW configuration options.
@@ -42,5 +42,4 @@ function crio_child_config( $config ) {
 
 	return $config;
 }
-
 add_filter( 'boldgrid_theme_framework_config', 'crio_child_config', 11 );
