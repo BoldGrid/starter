@@ -56,4 +56,4 @@ add_filter( 'boldgrid_theme_framework_config', 'crio_child_config', 11 );
    wp_enqueue_style( $child_theme_name . '-styles', get_stylesheet_directory_uri() . '/css/crio-child.css', array(), wp_get_theme()->get( 'Version' ) );
    wp_enqueue_script( $child_theme_name . '-scripts', get_stylesheet_directory_uri() . '/js/crio-child.js', array( 'jquery' ), wp_get_theme()->get( 'Version') );
  }
-add_action( 'wp_enqueue_scripts', 'crio_child_enqueue' );
+add_action( 'wp_enqueue_scripts', 'crio_child_enqueue', 1 );
