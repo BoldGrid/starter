@@ -23,11 +23,21 @@ require_once get_parent_theme_file_path( 'inc/boldgrid-theme-framework-config/co
  * @return array $config BGTFW configuration options.
  */
 function crio_child_config( $config ) {
-	//Set up child theme configs. Do not modify this section.
+	/*
+   * --------------------------
+   * Set up child theme configs.
+   * Do not modify this section.
+   * --------------------------
+   */
   $config['boldgrid-parent-theme'] = true;
   $config['parent-theme-name'] = 'crio';
   $config['theme_name'] = $child_theme_name;
 	$config['customizer-options']['colors']['settings']['scss_directory']['default'] = get_stylesheet_directory() . '/css';
+  /*
+   * -----------------------------------
+   * Modify anything below this point
+   * -----------------------------------
+   */
 
 	//Demonstration of adding a new saved color palette
 	$config['customizer-options']['colors']['defaults'][] = array(
